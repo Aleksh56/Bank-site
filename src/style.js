@@ -1,7 +1,11 @@
 
 const styles = {
     container: 'container mx-auto px-3',
+    navContainer: 'sticky top-0 bg-white z-50',
     navBar: 'w-full p-6 flex justify-between items-center',
+    footer: 'py-[40px]',
+    footerColumnsContainer: 'sm:flex grid grid-rows-2 grid-cols-2 gap-3 justify-center sm:justify-between items-start sm:flex-row flex-col py-[40px]',
+
 
     flexCenter: 'flex flex-1 items-center justify-center',
     flexWrapCenter: 'flex flex-1 items-center justify-center flex-wrap',
@@ -25,6 +29,10 @@ const styles = {
     resultsGrid: 'grid lg:grid-cols-4 md:grid-cols-3 md:gap-[10vh] flex-1 lg:gap-[15vh] sm:grid-cols-2 sm:gap-[5vh] grid-cols-1',
     newslatterInput: 'xs:w-[340px] w-[270px]  h-[45px] px-3 border-2 border-gray-400 rounded-md ss:mr-5 mr-0 ss:mb-0 mb-6',
     aboutPageTextContainer: 'float-left md:max-w-[40%] max-w-[100%] md:mr-[100px] md:mb-0 mb-[50px] mr-0 md:text-start text-center',
+    footerBG: 'bg-neutral-900',
+    footerColumn: '',
+    footerColumnHeading: 'text-2xl font-semibold mb-[15px] text-white',
+    footerColumnLinks: 'mb-[5px] text-gray-300 transition-all hover:scale-105',
 
 }
 

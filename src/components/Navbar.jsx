@@ -35,16 +35,16 @@ const Navbar = () => {
             <div onClick={() => setToggled((prev) => !prev)}>
                 {toggled ? <AiOutlineClose className='h-[30px] w-[30px]' /> : <BiMenu className='h-[30px] w-[30px]'/> }
             </div>
-            {toggled && <div className='flex flex-col items-start justify-start bg-red-200 fixed top-[0px] right-[13vw] h-[100vh] w-[50vw] z-10 leading-9 pt-[50px]'>
-                <AiOutlineClose className='absolute top-[15px] right-[80px] z-20 text-2xl' onClick={() => setToggled((prev) => !prev)}/>
+            {toggled && <ul className='flex flex-col items-start justify-start bg-pink-100 fixed top-[0px] right-[0vw] h-[100vh] w-[50vw] z-10 leading-9 pt-[50px]'>
+                <AiOutlineClose className='absolute top-[15px] right-[15px] z-20 text-3xl' onClick={() => setToggled((prev) => !prev)}/>
                 {navLinks.map((link) => (
-                    <li key={link.id} className={`list-none font-notoSans cursor-pointer font-normal lg:text-[16px] text-[14px] uppercase tracking-widest ${link === navLinks.length - 1 ? 'mr-0' : 'mr-5'}`}>
+                    <li key={link.id} className={`list-none font-notoSans cursor-pointer font-normal lg:text-[16px] text-[14px] uppercase tracking-widest ml-[20px] ${link === navLinks.length - 1 ? 'mr-0' : 'mr-5'}`}>
                         <Link to={`/${link.id}`}>
                             {link.title}
                         </Link>
                     </li>
                 ))}
-            </div>}
+            </ul>}
         </div>
     </nav>
   )
